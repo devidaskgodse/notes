@@ -1,2 +1,2 @@
-# notebooks
-A collection of Python, Julia &amp; MATLAB notebooks
+# notes
+A collection of quarto documents on different topics
