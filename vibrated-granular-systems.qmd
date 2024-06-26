@@ -1,0 +1,1596 @@
+---
+title: Literature Review for Vibrated Granular Materials
+author: Devidas Kacharu Godse
+date: 2024-06-25
+date-format: iso
+number-sections: true
+bibliography: references.bib
+---
+
+## Paper Title {#sec-bose2007intruder}
+
+# 2009. Characterization of Chaotic Dynamical Systems. {#sec-2009CharacterizationChaotic}
+
+Title: Characterization of Chaotic Dynamical Systems
+Author: 
+Year: (2009)
+Link: https://www.worldscientific.com/doi/abs/10.1142/9789814277662_0005
+DOI: 10.1142/9789814277662_0005
+
+
+---
+
+# 2021. Efficacy of simple continuum models for diverse granular intrusions. {#sec-agarwal2021efficacy}
+
+Shashank Agarwal, Andras Karsai, Daniel I Goldman, Ken Kamrin. 2021. Efficacy of simple continuum models for diverse granular intrusions. _Soft Matter_. 7196–7209.
+
+Link: https://pubs.rsc.org/en/content/articlehtml/2021/sm/d1sm00130b
+DOI: 10.1039/d1sm00130b
+
+Granular materials show multiphase behaviour by showing solid-like and fluid-like properties simultaneously. This makes the modelling of such yieldable/flowable materials is difficult.
+
+DEM is a micro-scale method can capture this behaviour, but macro-scale properties are many times of interest.
+**Q:** Can it be analogous to stat mech and thermodynamics, where macro scale properties is lower dimensional representation of underlying micro-scale behaviour?
+
+---
+
+
+# 1999. Slow drag in a granular medium. {#sec-albert1999slow}
+
+R Albert, MA Pfeifer, A-L Barabási, P Schiffer. 1999. Slow drag in a granular medium. _Physical review letters_. 205.
+
+Link: https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.82.205
+DOI: 10.1103/PhysRevLett.82.205
+Drive Link: https://drive.google.com/file/d/1qSEXEyQcfcQVjwDr_DEwKcQHvCTLiW6n/view?usp=sharing
+
+- Studied slow drag in a granular medium
+- Drag force proportional to cylindrical intruder diameter
+- Drag force proportional to the square of the depth
+- Drag force independent of intruder velocity
+
+---
+
+
+# 2001. Granular drag on a discrete object: Shape effects on jamming. {#sec-albert2001granular}
+
+Istvan Albert, JG Sample, AJ Morss, S Rajagopalan, A-L Barabási, P Schiffer. 2001. Granular drag on a discrete object: Shape effects on jamming. _Physical review E_. 061303.
+
+Link: https://journals.aps.org/pre/abstract/10.1103/PhysRevE.64.061303
+DOI: 10.1103/PhysRevE.64.061303
+
+- tested dependence of drag on varying the shape of the intruder
+	- the change in drag force was small, but the depth dependence of drag was affected by the change in the intruder shape
+
+---
+
+# zaslavsky1978simplest {#sec-zaslavsky1978simplest}
+
+- https://www.sciencedirect.com/science/article/pii/0375960178901950
+```bibtex
+@article{zaslavsky1978simplest,
+	  title={The simplest case of a strange attractor},
+	  author={Zaslavsky, GM},
+	  journal={Physics Letters A},
+	  volume={69},
+	  number={3},
+	  pages={145--147},
+	  year={1978},
+	  publisher={Elsevier}
+}
+```
+
+
+# 1998. Patterns in 3D Vertically Oscillated Granular Layers: Simulation and Experiment. {#sec-bizon1998Patterns3D}
+tags:: #literature
+
+C. Bizon, M. D. Shattuck, J. B. Swift, W. D. McCormick, Harry L. Swinney. 1998. Patterns in 3D Vertically Oscillated Granular Layers: Simulation and Experiment. _Physical Review Letters_.
+
+Link: https://link.aps.org/doi/10.1103/PhysRevLett.80.57
+DOI: 10.1103/PhysRevLett.80.57
+
+---
+
+This creation of patterns could be used to explain the acoustic patterns observed when a plate vibrating with certain frequency creates interesting patterns from the displaced grains places on the plate. Nevermind, they've already done it and validated against experiments 🫤.
+
+@sec-bose2007intruder
+
+# 1993. Numerical simulation of inelastic, frictional particle-particle interactions. _Particulate two-phase flow_ {#sec-walton1993NumericalSimulation}
+
+Link: http://grainflow.com/index_files/Simulation_Particle_Interactions_Chap25_ed_Roco.pdf
+DOI: 
+
+- This book section provides a collision model for inelastic, frictional, rotating particles.
+- Collision between two particles with mass $m_a$ $m_b$ and diameter $\sigma_a$, $\sigma_b$ respectively is considered as follows
+- Particle A is at position $r_a$ having velocity $v_a$ and angular velocity $\omega_a$ and similarly for particle B just with subscript B.
+- Relative position of particle B w.r.t. particle A is given as $$\hat{\textbf{r}}_{ab} = \frac{\textbf{r}_b - \textbf{r}_a}{|\textbf{r}_b - \textbf{r}_a|}$$
+- Relative velocity of particle B w.r.t. particle A is given as $\textbf{v}_{ab} = \textbf{v}_b - \textbf{v}_a$
+- Normal component of relative velocity: $\textbf{v}_n = (\textbf{v}_{ab}\cdot \hat{\textbf{r}}_{ab})\hat{\textbf{r}}_{ab}$
+- Tangential component of relative velocity: $\textbf{v}_t = \textbf{v}_{ab} - \textbf{v}_n$
+- Relative surface velocity in tangential direction: $$\textbf{v}_s = \textbf{v}_t + \frac{\textbf{r}_{ab} \times (\sigma_a \bf{\omega}_a + \sigma_b \bf{\omega}_b)}{2}$$
+- After the collision of both particles, the post collision velocities (both linear and angular) can be calculated as follows
+- $$\textbf{v}_a^\prime = \textbf{v}_a + \frac{m_b}{m_a + m_b}\left[(1+e_n)\textbf{v}_n +\frac{K(1+e_t)}{2(K+1)}\textbf{v}_s\right]$$
+- $$\textbf{v}_b^\prime = \textbf{v}_b - \frac{m_a}{m_a + m_b}\left[(1+e_n)\textbf{v}_n +\frac{K(1+e_t)}{2(K+1)}\textbf{v}_s\right]$$
+- $$\omega_a^\prime = \omega_a + \frac{(1+e_t)}{\sigma_a(1+K)} (\hat{\textbf{r}}_{ab} \times \textbf{v}_s)$$
+- $$\omega_b^\prime = \omega_b + \frac{(1+e_t)}{\sigma_b(1+K)} (\hat{\textbf{r}}_{ab} \times \textbf{v}_s)$$
+- Here, $e_n$ and $e_t$ are coefficient of restitution in normal direction and tangential direction respectively.
+- $K$ is dimensionless moment of inertia. For uniformly dense spheres, it's value is 2/5.- This book section provides a collision model for inelastic, frictional, rotating particles.
+- Collision between two particles with mass $m_a$ $m_b$ and diameter $\sigma_a$, $\sigma_b$ respectively is considered as follows
+- Particle A is at position $r_a$ having velocity $v_a$ and angular velocity $\omega_a$ and similarly for particle B just with subscript B.
+- Relative position of particle B w.r.t. particle A is given as $$\hat{\textbf{r}}_{ab} = \frac{\textbf{r}_b - \textbf{r}_a}{|\textbf{r}_b - \textbf{r}_a|}$$
+- Relative velocity of particle B w.r.t. particle A is given as $\textbf{v}_{ab} = \textbf{v}_b - \textbf{v}_a$
+- Normal component of relative velocity: $\textbf{v}_n = (\textbf{v}_{ab}\cdot \hat{\textbf{r}}_{ab})\hat{\textbf{r}}_{ab}$
+- Tangential component of relative velocity: $\textbf{v}_t = \textbf{v}_{ab} - \textbf{v}_n$
+- Relative surface velocity in tangential direction: $$\textbf{v}_s = \textbf{v}_t + \frac{\textbf{r}_{ab} \times (\sigma_a \bf{\omega}_a + \sigma_b \bf{\omega}_b)}{2}$$
+- After the collision of both particles, the post collision velocities (both linear and angular) can be calculated as follows
+- $$\textbf{v}_a^\prime = \textbf{v}_a + \frac{m_b}{m_a + m_b}\left[(1+e_n)\textbf{v}_n +\frac{K(1+e_t)}{2(K+1)}\textbf{v}_s\right]$$
+- $$\textbf{v}_b^\prime = \textbf{v}_b - \frac{m_a}{m_a + m_b}\left[(1+e_n)\textbf{v}_n +\frac{K(1+e_t)}{2(K+1)}\textbf{v}_s\right]$$
+- $$\omega_a^\prime = \omega_a + \frac{(1+e_t)}{\sigma_a(1+K)} (\hat{\textbf{r}}_{ab} \times \textbf{v}_s)$$
+- $$\omega_b^\prime = \omega_b + \frac{(1+e_t)}{\sigma_b(1+K)} (\hat{\textbf{r}}_{ab} \times \textbf{v}_s)$$
+- Here, $e_n$ and $e_t$ are coefficient of restitution in normal direction and tangential direction respectively.
+- $K$ is dimensionless moment of inertia. For uniformly dense spheres, it's value is 2/5.
+
+
+---
+
+# 2022. Drag on a circular intruder traversing a shape-heterogeneous granular mixture. {#sec-tripura2022drag}
+tags: #literature
+
+Bitang Kwrung Tripura, Sonu Kumar, Vamsi Krishna Reddy Anyam, K Anki Reddy. 2022. Drag on a circular intruder traversing a shape-heterogeneous granular mixture. _Physical Review E_. 014901.
+
+Link: https://journals.aps.org/pre/abstract/10.1103/PhysRevE.106.014901 
+DOI: 10.1103/PhysRevE.106.014901
+
+
+- Effect of changing host medium on drag force on circular intruders in 2D granular medium
+- Drag force on intruder varies
+	- with change in mixture concentration of host particles with different shapes (dumbbell and disk shape in the paper specifically)
+		- Reasoning: force chain structure veries with host particle shape
+			- Particle shape depence of force chain is supressed in frictionless media
+				- How do they know that it is present but suppressed in frictionless media?
+	- increases lineraly with area fraction of host particles
+		- Reasoning: More area fraction results in more contact forces
+- Simulation methodology
+	- Tools: LAMMPS and OVITO
+
+- Simulation parameters
+
+| Parameter | Value |
+|--|--|
+| Simulation geometry | 2D rectangular box |
+| Contact Model | Hertzian Spring |
+| Diameter of disk particles | $0.01~\mathrm{m}$ |
+| Diameter of dumbbell sub-particles | $0.007~\mathrm{m}$ |
+| Polydispersity of particle diameters | $10~\%$ |
+| Integration Algorithm | Velocity Verlet |
+| $k_n$ | $2 \times 10^9~\mathrm{kg~m^{-2}~s^{-2}}$ |
+| $k_t$ | $2.456 \times 10^9~\mathrm{kg~m^{-2}~s^{-2}}$ |
+| $\gamma_n$ | $8 \times 10^6~\mathrm{m~s^{-1}}$ |
+| $\gamma_t$ | $8 \times 10^6~\mathrm{m~s^{-1}}$ |
+| Young's Modulus ($E$) | $2~\mathrm{G~Pa}$ |
+| Poisson's ratio ($\nu$) | 0.3 |
+| Density ($\rho$) | $2000~\mathrm{kg/m^3}$ |
+| Time step ($\Delta t$) | $2 \times 10^{-6}~\mathrm{s}$ |
+| Travel distance of intruder in x direction | $3~\mathrm{m}$ |
+| Intruder diameter | $0.1~\mathrm{m}$ |
+| Frame of reference for intruder motion | Constant Velocity |
+
+- Varied parameters
+
+| Parameter | Value |
+|--|--|
+| Area fraction ($\phi$) | [0.43,0.77,0.82] |
+| Coefficient of friction ($\mu$) | [0,0.5] |
+| Number of particles | [100000,180000,188000] |
+|  |  |
+
+- Computations performed
+	- Variation of stress with distance from intruder w.r.t. change in
+		- concentration of dumbbell shaped particles
+		- area fraction
+		- intruder diameter
+		- initial intruder velocity
+	- probability function of stress on the intruder for changing intruder velocities
+	- Variation w.r.t angular position for
+		- Number of contacts
+		- Average pressure
+	- Time averaged drag force vs intruder velocity w.r.t varying dumbbell particle concentration
+	- For changing area fractions
+		- Drag force vs intruder velocity
+		- Stress vs intruder velocity
+		- Number of contacts vs intruder velocity
+
+
+---
+
+# 2007. Intruder clustering in three-dimensional granular beds. {#sec-lui2007intruder}
+tags: #literature
+
+LT Lui, Michael R Swift, RM Bowley, PJ King. 2007. Intruder clustering in three-dimensional granular beds. _Physical Review E_. 051303.
+
+Link: https://journals.aps.org/pre/abstract/10.1103/PhysRevE.75.051303
+DOI: 10.1103/PhysRevE.75.051303
+
+- clustering behavior is observed when the system is vibrated with sinusoidal oscillations  
+- for the non-sinusoidal signal of type,  
+$$A_1 sin(wt) + A_2 sin(2wt+phi)$$
+the attraction between intruders decreases, and clustering breaks for phi in the range of 120 to 150 degrees  
+- changing the vibration method during the simulation also have the same result, i.e., broken clustering  
+- Neutral Buoyancy:  
+- does not mean that intruder and host particles have the same density  
+- for this system, neutral buoyancy is found when intruder density is 3/4th of host particle density  
+- how does one precompute the neutral buoyancy requirements?  
+-> the density is adjusted so that intruders remain at mid-bed height on average when the system is vibrated  
+- attraction of intruders in sinusoidal vibrations in 2d has been observed already  
+- what is the relationship between intruder size and density and host particle size and density that decides if intruders will float or sink in the medium or be neutrally buoyant? aka a regime mapping  
+This assumes they are vibrated by the same frequency and amplitude as the sinusoidal signal.  
+How to do this?  
+-> this can be done via a series of simulations by changing the system's parameters.  
+Then in the results, one can track the mean height of the intruder and the standard deviation of positions of intruders vertically over time. potential graphs can look like images attached to the note  
+
+- Is there literature available on mapping?  
+-> shishodia2001buoyant has studied the effect of relative density on the equilibrium bed height, i.e., whether the intruder will float or sink  
+- why shall I study this effect?  
+-> 1. to eliminate the buoyant force component from the observed resistive force on the intruder  
+2. to check if the attractive or repulsive nature of vibration can change when particles are not neutrally buoyant. Does the relationship and mechanism of attractive and repulsive force change with a change in buoyancy?
+
+---
+
+# 2021. Accurate buoyancy and drag force models to predict particle segregation in vibrofluidized beds. {#sec-oshtorjani2021accurate}
+tags: #literature
+
+Mehrdad Kiani Oshtorjani, Liu Meng, Christoph R Müller. 2021. Accurate buoyancy and drag force models to predict particle segregation in vibrofluidized beds. _Physical Review E_. 062903.
+
+Link: https://journals.aps.org/pre/abstract/10.1103/PhysRevE.103.062903
+DOI: 10.1103/physreve.103.062903
+
+
+- Assesing validity of granular buoyancy using Archimedean formulation for granular systems
+
+
+---
+
+# 2017. Velocity distribution of a driven inelastic one-component Maxwell gas. {#sec-prasad2017velocity}
+tags: #literature
+
+VV Prasad, Dibyendu Das, Sanjib Sabhapandit, R Rajesh. 2017. Velocity distribution of a driven inelastic one-component Maxwell gas. _Physical Review E_
+
+Link: 
+DOI: 
+
+
+Questions to raise out of curiousity:
+
+
+
+---
+
+# 2020. Drag acting on an intruder in a three-dimensional granular environment. {#sec-takada2020drag}
+tags: #literature
+
+Satoshi Takada, Hisao Hayakawa. 2020. Drag acting on an intruder in a three-dimensional granular environment. _Granular Matter_. 1–6.
+
+Link: https://link.springer.com/article/10.1007/s10035-019-0973-8
+DOI: 10.1007/s10035-019-0973-8
+
+**Abstract**
+- The drag acting on an intruder in a three-dimensional frictionless dry granular environment is numerically studied.
+- It is found the followings:
+	1. There is no yield force for the motion of the intruder without the gravity.
+	2. The drag is proportional to the cross section of the moving intruder.
+	3. If the intruder is larger than surrounding grains, the drag is proportional to the moving speed V of the intruder for dense systems, but it exhibits a crossover from quadratic to linear dependences of the moving speed when the volume fraction of the surrounding grains is much lower than the jamming point.
+	4. There is a plateau regime where the drag is almost independent of V if the size of the intruder is identical to those of the environmental grains and the volume fraction is near the jamming point.
+
+**Problem**
+
+**Method**
+- MD Simulation, 3D frictionless environment
+
+**Conclusion**
+
+- Drag proportional to intruder cross section
+- Drag proportional to intruder velocity (for dense system)
+- Quadratic to linear dependence for low volume fractions
+- Platue region near jamming point and intruder size ~ grain size
+- Drag expressions for different relative size,volume fraction and Velocity in simulation
+
+**Relevance**
+
+
+---
+
+# 2021. Effect of two parallel intruders on total work during granular penetrations. {#sec-pravin2021effect}
+tags: #literature
+
+Swapnil Pravin, Brian Chang, Endao Han, Lionel London, Daniel I Goldman, Heinrich M Jaeger, S Tonia Hsieh. 2021. Effect of two parallel intruders on total work during granular penetrations. _Physical Review E_. 024902.
+
+Link: https://journals.aps.org/pre/abstract/10.1103/PhysRevE.104.024902
+DOI: 10.1103/PhysRevE.104.024902
+
+- Extensively studied in the literature: effect and interaction of single intruder in a granular medium
+- Less explored in literature: effect on multiple intruders in the vicinity of each other
+	*What happens to the stagnant zones in the presence of multiple intruders?*
+- Approach: Simulation + 2 Experimental setups
+- The work done by the two rods over the penetration depth was maximum at three-particle diameters. This is invariant to other parameters like frictional force and the size of intruders. The amount of work done was affected by the parameters mentioned above.
+- The work done plateaued at large intruder separations and is around 25% more at the maximum than the work done at larger separations ().
+- Increasing the intruder's size slightly increases this separation distance of maximum work done.
+
+
+---
+
+# 2021. Role of shape on the forces on an intruder moving through a dense granular medium. {#sec-tripura2021role}
+tags: #literature
+
+Bitang Kwrung Tripura, Sonu Kumar, K Anki Reddy, Julian Talbot. 2021. Role of shape on the forces on an intruder moving through a dense granular medium. _Particulate Science and Technology_. 1–11.
+
+Link: https://www.tandfonline.com/doi/full/10.1080/02726351.2021.1983905
+DOI: 10.1080/02726351.2021.1983905
+
+- Investigated how shape of intruder affectes the lift and drag force on the intruder
+- Drag force
+	- weakly dependent on shape of the intruder when cross section is constant
+	- varies linearly with depth
+	- proportional to velocity for frictionless particles
+	- constant at low velocity for particles with friction 
+- Lift force	
+	- depends significantly on the intruder shape
+	- doesn't vary much with depth
+
+
+---
+
+# 2010. High-velocity drag friction in dense granular media. {#sec-takehara2010high}
+tags: #literature
+
+Yuka Takehara, Sachika Fujimoto, Ko Okumura. 2010. High-velocity drag friction in dense granular media. _EPL (Europhysics Letters)_. 44003.
+
+Link: https://iopscience.iop.org/article/10.1209/0295-5075/92/44003
+DOI: 10.1209/0295-5075/92/44003
+
+- High velocity + dense granular system (2-d model)
+- $F_d \sim V^2$ (Justified using Bagnold theory)
+- Description deviates for low velocities
+
+
+---
+
+# 2020. Particle flows around an intruder. {#sec-takada2020particle}
+tags: #literature
+
+Satoshi Takada, Hisao Hayakawa. 2020. Particle flows around an intruder. _Physical Review Research_. 033468.
+
+Link: https://journals.aps.org/prresearch/abstract/10.1103/PhysRevResearch.2.033468
+DOI: 10.1103/PhysRevResearch.2.033468
+
+- Fixed intruder setup with granular material with bulk velocity
+- Elastic collisions between particles
+- Epstein’s law and Newtonian law crossover study
+- Epstein’s law to Stoke’s law crossover
+- Boundary conditions does not affect drag force
+
+
+---
+
+# 2017. Detailed numerical simulation of unsteady drag coefficient of deformable droplet. {#sec-shao2017detailed}
+tags: #literature
+
+Changxiao Shao, Kun Luo, Jianren Fan. 2017. Detailed numerical simulation of unsteady drag coefficient of deformable droplet. _Chemical Engineering Journal_. 619–631.
+
+Link: https://www.sciencedirect.com/science/article/pii/S1385894716312980
+DOI: 10.1016/j.cej.2016.09.062
+
+- Unsteady drag > Steady drag
+
+---
+
+
+
+
+
+---
+
+# 2001. Particle Segregation in Vibrofluidized Beds Due to Buoyant Forces. _Physical Review Letters_ {#sec-shishodia2001ParticleSegregationa}
+
+tags: #literature
+
+Link: 
+DOI: 10.1103/PhysRevLett.87.084302
+
+VFBs are commonly used in industries for various thermal processing operations such as drying, heating, cooling, and agglomerating. The vibrofluidized bed is one of the most successful modifications of the conventional fluidized bed and is especially suited for processing sticky granular materials which cannot be fluidized conventionally.
+
+Previous work by Ohtsuki et al. [^1][^2] found that, when an impurity is introduced into a VFB, the impurity moves to a particular equilibrium position depending on the impurity diameter, density, and the bed vibration characteristics. They reported that the equilibrium position could not be predicted using a force balance consisting of the granular pressure force acting on the impurity and the impurity weight. [^2]
+
+## Investigated
+- Influence of size, density, and excitation parameters on an impurity’s equilibrium position within a VFB.
+- We propose and verify a model whereby the impurity position is, in fact, predicted by a balance between the net granular pressure, or “buoyant,” force within the VFB and the impurity weight.
+
+## Simulation setup
+- Only those simulations in which all of the collisions have a duration equal to that of a two-particle impact are considered completely fluidized.
+### Particle properties
+- 2D soft particle DEM Model
+- Host particles: 300 frictionless, inelastic disks of diameter $d$ and density $\rho$
+- Intruder: diameter $d_I$ and density $\rho_I$
+- 0.95 COR for particle-particle and wall-particle
+### Simulation Domain
+- Box width: $20d$
+- Periodic boundaries to avoid side-wall effects (e.g. convection)
+### Vibration parameters
+- amplitude $a$
+- angular frequency $\omega$
+- dimensionless acceleration $\Gamma = a\omega^2/g$
+
+## Analytical Section
+- Pressure is non-dimensionalised by $\rho g d$ as follows
+  $$P^\prime = \frac{P}{\rho g d}$$
+- Vibration frequency is non-dimensionalised by $\sqrt{g/d}$ as follows
+  $$\omega^\prime = \omega \sqrt{d/g}$$
+- Stress calculation is done by binning the simulation domain into chunks in one direction
+- Streaming Normal Stress is given by
+	$$\tau_{S,ii} = \rho \phi <v_i^\prime>$$
+where,
+$\rho$ is particle mass density
+$\phi$ is solid volume fraction in a bin or simulation domain
+$<v_i^\prime>$ is time-averaged fluctuating velocity in $i$th direction
+- Collisional Component of Normal Stress is given by
+  
+
+## Results
+### Effect of collision frequency
+- If the collision frequency is large the impurity will not fluctuate much about its equilibrium position since the restoring pressure force working against the impurity weight will be nearly continuous.
+- If the collision frequency is small, however; the impurity position will fluctuate considerably since the restoring force for the particle weight will occur in discrete impacts rather than as a continuous pressure.
+
+### Equilibrium height as function of density ratio
+- Equilibrium height decreases as the density ratio increases.
+- Density ratio range is as follows
+	  $$5 < d_{intr}/d < 8$$
+![Equilibrium Height as Function of Density Ratio](assets/shishodia2001.png)
+
+### Modes of Momentum Transfer
+- The “streaming” or “kinetic” mode is the transport of momentum as a particle moves through the material carrying its momentum with it.
+- The “collisional” mode is the transport of momentum by interparticle collisions.
+- The streaming mode dominates at low densities where collisions are infrequent and the collisional mode is dominant at high densities as the particles cannot move far between collisions.
+
+$$F_p = \frac{dp}{dy}d_{intr}^2$$
+$$\frac{dp}{dy} = -\frac{M_{intr}g}{d_{intr}^2} = - \frac{\pi}{4}\rho_{intr}g$$
+
+>This is coming from taylor series expansion and is approximated to single term. Hence the unstable equilibrium location could be coming in the results.
+> ~ Prof. Manaswita Bose
+
+
+## Reference
+- [^1]: T. Ohtsuki, D. Kinoshita, Y. Takemoto, and A. Hayashi, J. Phys. Soc. Jpn. 64, 430 (1995).
+- [^2]: T. Ohtsuki et al., Int. J. Mod. Phys. B 7, 1865 (1993).
+
+---
+
+# 1981. The stress tensor in a granular flow at high shear rates. _Journal of Fluid Mechanics_ {#sec-savage1981StressTensor}
+tags: #literature
+
+S. B. Savage, D. J. Jeffrey. 1981. The stress tensor in a granular flow at high shear rates. _Journal of Fluid Mechanics_
+
+Link: 
+DOI: 10.1017/S0022112081000736
+
+As mentioned in [[@haff1983GrainFlow]] about the paper,
+> Stress tensor is calculated by appeal to particle distribution functions, so that a more definite link to the microscopic nature of the fluid is achieved. However, an explicit treatment of the energy equation is not attempted by them, with the result that solutions for the flow require additional assumptions.
+
+
+---
+
+# 2008. Coefficient of tangential restitution for viscoelastic spheres. {#sec-schwager2008coefficient}
+tags: #literature
+
+T Schwager, V Becker, T Pöschel. 2008. Coefficient of tangential restitution for viscoelastic spheres. _The European Physical Journal E_. 107–114.
+
+Link: http://link.springer.com/10.1140/epje/i2007-10356-3
+DOI: 10.1140/epje/i2007-10356-3
+
+ - Discuss a collision model for inelastic particles, rotating, and having surface friction.
+
+---
+
+# 2016. Transport properties and segregation phenomena in vibrating granular beds. {#sec-liao2016transport}
+tags: #literature
+
+Chun-Chung Liao, Shu-San Hsiau. 2016. Transport properties and segregation phenomena in vibrating granular beds. _KONA Powder and Particle Journal_. 109–126.
+
+Link: https://www.jstage.jst.go.jp/article/kona/33/0/33_2016020/_article/-char/ja/
+DOI: 10.14356/kona.2016020
+
+
+- Granular materials are common in daily life and in many industrial processes.
+- Both fundamental research and industrial application studies are crucial for understanding the transport properties and segregation mechanisms of vibrating granular beds.
+- One major related research topic is granular materials subjected to external vibration;
+- Such granular materials exhibit complex movement and Brazil nut segregation.
+- Understanding the transport properties and the rising of an intruder immersed in granular materials is a challenge in granular flow research.
+- In particular, granular segregation is a complex and poorly understood process.
+- Therefore, numerous researchers have studied the transport properties and segregation mechanisms of granular materials (Bose et al., 2007; Breu et al., 2003; Bridgwater, 1976; Brito et al., 2008; Campbell, 1997; Halsey and Levine, 1998; Herminghaus, 2005; Hsiau and Shieh, 1999; Hsiau and Yang, 2002; Hsiau and Yang, 2003; Hsiau et al., 2013; Khakhar et al., 1997; Kudrolli, 2004, 2008; Liao and Hsiau, 2009, 2010; Liao et al., 2010a, 2015; Liffman et al., 2011; Lozano et al., 2015; Lu and Hsiau, 2008; Natarajan et al., 1995; Saez et al., 2005; Shi et al., 2007; Tai and Hsiau, 2004; van der Vaart et al., 2015; Williams, 1976; Windows-Yule et al., 2015a).
+
+---
+
+# 2008. Interaction between intruders in vibrated granular beds. {#sec-lui2008interaction}
+tags: #literature
+
+LT Lui, Michael R Swift, RM Bowley, PJ King. 2008. Interaction between intruders in vibrated granular beds. _Physical Review E_. 020301.
+
+Link: https://journals.aps.org/pre/abstract/10.1103/PhysRevE.77.020301
+DOI: 10.1103/PhysRevE.77.020301
+
+- intruder interaction in vertically + sinusoidally vibrated bed
+- attraction between intruders is function of local volume fraction and kinetic energy
+- attraction can change to repulsion by reduced coefficient of restitution between intruder and particles
+- Neutrally buoyant: intruder and medium particles having same density but different sizes
+
+---
+
+# 2012. Segregation of an intruder in a heated granular dense gas. {#sec-garzo2012segregation}
+tags: #literature
+
+Vicente Garzó, Francisco Vega Reyes. 2012. Segregation of an intruder in a heated granular dense gas. _Physical Review E_. 021308.
+
+Link: https://journals.aps.org/pre/abstract/10.1103/PhysRevE.85.021308
+DOI: 10.1103/PhysRevE.85.021308
+
+Abstract
+- Sonine polynomial approximation for the mass transport of intruder in the gas
+- dependence of ratio of granular temperature of intruder and gas on the solid volume fraction
+- A transition boundary between the BNE and RBNE based on the thermal diffusion factor (introduced in previous work)
+- Used Gaussian noise for driving the gas
+
+Problem
+
+Method
+- Developed theoretical model for the mass diffusion of both species
+- used DSMC simulations to validate the theoretical results
+
+Conclusion
+
+- Resemblance to our methodology
+	- Diffusive driving with Gaussian noise added to the velocities
+- Difference from our methodology
+	- Post collision velocities are assigned only to the intruder and not to the particle
+	- time step is defined in terms of collision frequency 
+
+- Some questions I need answers of
+	- $\phi = 0$: what does this mean in context of this paper?
+	- what is $\Lambda$ & transition for RBNE and BNE
+	- 50-50% intruder & particle ratio
+	- highlight the main objectives of paper
+
+---
+
+# 2022. Drag force in granular shear flows: regimes, scaling laws and implications for segregation. {#sec-jing2022drag}
+
+source: https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/drag-force-in-granular-shear-flows-regimes-scaling-laws-and-implications-for-segregation/C3FDA5E6EF105A7A74941543C07FD8C7
+
+
+
+```bibtex
+@article{jing2022drag,
+  title={Drag force in granular shear flows: regimes, scaling laws and implications for segregation},
+  author={Jing, Lu and Ottino, Julio M and Umbanhowar, Paul B and Lueptow, Richard M},
+  journal={Journal of Fluid Mechanics},
+  volume={948},
+  pages={A24},
+  year={2022},
+  publisher={Cambridge University Press}
+}
+```
+
+- Regimes of intruder dynamics
+	- proportional to
+		- drag force
+		- intruder velocity
+		- flow inertial number
+	- as follows
+		- fluctuation dominated regime for small drag forces
+		- viscous regime for intermediate drag force (linear force-velocity relation)
+		- inertial (cavity formation) regime for large drag forces (quadratic force velocity relation)
+- map against intrusion studies done for
+	- static bed
+	- vibrated bed
+	- diffusive medium
+	- medium + fluid
+	- flowing bed
+
+> Transition from viscous regime to inertial regime depends on inertial number
+
+> Quantitative similarity between intruder drag in shear flows and Stokesian drag on sphere in viscous fluid for intruder Reynolds number spanning 5 orders of magnitude.
+
+> Proposed a modified Stokes drag model that accounts for secondary dependence of drag coefficient on the inertial number and intruder size and density ratios.
+
+> When the drag model is coupled with a segregation force model for intruders in dense granular flows, it is possible to predict the velocity of gravity-driven segregation of an intruder particle in shear flow simulations.
+
+
+---
+
+# 2020. Origin of the long-ranged attraction or repulsion between intruders in a confined granular medium. {#sec-dhiman2020origin}
+tags: #literature
+
+Manish Dhiman, Sonu Kumar, K Anki Reddy, Raghvendra Gupta. 2020. Origin of the long-ranged attraction or repulsion between intruders in a confined granular medium. _Journal of Fluid Mechanics_. A23.
+
+Link: https://www.cambridge.org/core/product/identifier/S0022112019010358/type/journal_article
+DOI: 10.1017/jfm.2019.1035
+
+**Context/background**
+- Zuriguel et al. and Pascheco and Ruiz Suarez demonstrated long-ranged force between intruders placed in certain distance from each other.
+- papers aims a unified explanation of attractive and repulsive forces between 2 intruders
+- proposed mechanism: building up of force chains and their subsequent buckling
+*if there is attraction and repulsion in the same system, can you make them oscillate somehow? is that possible by any arrangement?*
+- speculatively, some speculate this to be the origin of the segregation phenomena in granular materials
+
+**Method**
+- Done simulation study using Discrete Element Method
+- System content: 2 intruders in a 3D granular bed
+- Diameter of grains (d) with polydispersity of 10%
+- Intruder diameter: 5d
+- Centre to centre distance between intruders (L) is varied
+- Timestep: $10^{-4} \sqrt{\frac{d}{g}}$
+- Friction coefficient ($\mu$): 0.5 (unless stated otherwise)
+- No relative velocity between intruders: L is constant during simulation
+
+**Simulation details**
+- Force model by Brilliantov et al., Silbert et al.
+$$F^{ij}_n = \sqrt{R_{eff}\delta} (K_n \delta n_{ij} - m_{eff}\gamma_n v^{ij}_n)$$
+$$F^{ij}_t = \sqrt{R_{eff}\delta} (K_t \Delta s_t + m_{eff}\gamma_t v^{ij}_t)$$
+Where $$\delta = \frac{(d_i + d_j)}{2} - |r_i - r_j|,\ \ n_{ij} = \frac{(r_i - r_j)}{|r_i - r_j|}$$
+$\Delta s_t$ is tangential displacement vector \\
+Grains make contact if $\delta \geq 0$ \\
+$K$ is nonlinear spring constant (in scale of $\rho d g$ ) \\
+$\gamma$ damping coefficients (in scale of $\sqrt{\frac{g}{d^3}}$ \\
+Effective radius and effective mass are given as
+$$R_{eff} = \frac{d_1d_2}{2(d_1+d_2)},\ \ m_{eff} = \frac{m_1m_2}{m_1+m_2}$$
+- Consider slip contact if $F_t > \mu F_n$ and $\mu$ = 0.5 unless mentioned otherwise
+- Time step (dt) : $10^{-4}\sqrt{d/g}$
+- Forces on intruders recorede every 5dt
+- Average is computed once the system reached mean steady state
+- Energy is zero in system before starting simulations
+- No relative velocity between intruders. i.e. $L$ is constant throughout the simulation
+- Grain relative components are given as follows
+$$v^{ij}_n = \left(\left[ \dot{r_i} - \dot{r_j} + \omega_i \times \frac{d_i n_{ij}}{2} - \omega_j\times \frac{d_j n_{ij}}{2} \right] \cdot n_{ij} \right)n_{ij}$$ 
+$$ v^{ij}_t = \left[ \dot{r_i} - \dot{r_j} + \omega_i \times \frac{d_in_{ij}}{2} - \omega_j \times \frac{d_jn_{ij}}{2} \right] - v^{ij}_n$$
+
+**Results**
+- Mean drag force ($F_D$) and sideways force ($F_S$) calculated by averaging their instantaneous values after a mean steady-state behavior.
+- Stress tensor ($\sigma_R(t)$) and pressure ($P_R(t)$) calculated in any region $R$ using $$\sigma_R(t)= \frac{1}{V_R}\sum_{i\neq j}^{\rm{Region}\ R} (F^{ij} \otimes r_{ij})\ \ ,\ \ P_R(t) = - \frac{1}{3} \rm{Tr}(\sigma_R(t))$$
+- This is a scheme by [Guillard, Fortere, Pouliquen 2014] , Drescher \& Josselin de Jong 1972 , Seguin et al. 2016
+- $V_R$ is volume of the region
+- Pressure head ($P_{\rm{head}}$) acting on intruders is defined as pressure in region $z =\pm d$ before we initiate motion of intruders. i.e. $$P_{\rm{head}}= \frac{P_{z=\pm d}(t=0)}{\rho d g}$$
+- $P_{\rm{head}}$ can be varied by changing pressure exerted by the top wall $P_W$
+
+**Results for drag force**
+- Asymmetry in sideways force is induced by second intruder and not because of the wall.
+- At low (L-D): repulsion
+- At large (L-D): attraction going through a maxima
+- Very low variation in drag with changing (L-D)
+- Is lower for 2 intruder case compared to single intruder
+- Increase linearly with Pressure and friction
+- **Origin of granular drag**
+	- drag originated by co-existing creation and failure of force chains
+	- intruders moving alongside buckle the chains and reduce the drag	
+
+**Results for sideways force**
+- Magnitude of maximum attraction point depends linearly on $P_{\mathrm{head}}$
+- At constant $V$ and $\mu$, point of maximum attraction and point of zero sideways force is same for varying $P_{\mathrm{head}}$
+- Force chains use surfaces of other intruder when intrudes are close and stabilize themselves. When L-D increase, stabilization decrease as force chains are in shear zone of the other intruder. As L-D increase further, they start regaining the stability but surface is distant enough to not allow build up of enough pressure.. resulting in decreasing attraction after the maxima
+
+QUESTION: Is this caused by excluded volume effect? how do we confirm which mechanism is behind this?
+
+---
+
+# 2013. Gravity-driven granular free-surface flow around a circular cylinder. {#sec-cui2013gravity}
+tags: #literature
+
+Xinjun Cui, JMNT Gray. 2013. Gravity-driven granular free-surface flow around a circular cylinder. _Journal of Fluid Mechanics_. 314.
+
+Link: https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/gravitydriven-granular-freesurface-flow-around-a-circular-cylinder/752267BDE0262134C3C9268499E8AB05
+DOI: 10.1017/jfm.2013.42
+
+- Simulation + Experiment (and comparison)
+- Granular Avalanche around a cylinder
+- Comprehensive experimental setup figures
+- Studied bow shock and vacuum boundary
+
+---
+
+# 2020. Novel rotational effects of granular intruders in dense granular systems. {#sec-conti2020novel}
+tags: #literature
+
+Lorenzo Conti. 2020. Novel rotational effects of granular intruders in dense granular systems. (Doctoral dissertation, University of Edinburgh)
+
+Link: https://ethos.bl.uk/OrderDetails.do?uin=uk.bl.ethos.806201
+DOI: 
+
+**Some excerpts from the thesis**
+> Possibly the most interesting result regarding granular segregation in connection to the present study is the work of Jing et al. (2017) who found that setting the inter-particle friction coefficient to zero, no segregation is observed in polydisperse granular assemblies - while such work doesn’t directly analyse the rotation of the granular particles, the authors conjecture that the absence of segregation at zero friction is due to the absence of particle rotation and stipulate that particle rotation is essential for segregation to occur. Such hypothesis, however, appears to be in contrast with the results of Ding et al. (2011) where all experiments are carried out with theoretically infinite rolling resistance (no rotational degree of freedom) and a lift/upward movement is still observed, thus suggesting that there are additional friction-induced mechanisms to particles rotation causing segregation in binary mixtures. 
+
+> All data here presented employs Hookean contacts, although several of the simulations here presented were repeated with Hertzian contacts, these returned similar results, hence indicating that the phenomenons here presented are independent of the [[Notes on Particle Contact Models]] used, as found in many other granular studies (e.g. Wang 2017).
+
+> In Chapter 6 we look at the flow of particles against a rotating intruder, with gravity being no longer present, hence a characteristic unit of gravity cannot be used in this case. In such flow-based scenarios it is customary to adopt a scaling based on the driving measure of flow (e.g. shear rate in a shear-based flow scenario): however, in this case such scaling is not an option because, as will be seen in Section 6.4, the dependent variables do not scale linearly with the imposed particles’ flow velocity upstream of the intruder.
+
+> These drag forces, coupled with the fact that finding ways to generate translative motion in the first place is still an open challenge (Section 2.4), means that methods for locomotion or propulsion at fully-buried depths, other than very close to the surface (Maladen et al., 2011b), are yet to be found.
+
+> Scope for future research includes, most importantly, the need to expand the present study to understand how particles’ shape affects the motion of a rotating intruder, although this has been partly done by testing a simple device with rotating parts in grain barley and wheat in Section 5.5. For this, the computational cost both in terms of time and resources for simulating particles other than spherical and the lack of an established way to quantify particle shape diversion from spherical remains a challenge. Work to simulate the behaviour within cereal grains, coupled with the rigid body dynamics of a more complete working intruder design is currently being carried out by the writer together with colleagues - this is intended to also study the effect of more complex intruder shapes.
+
+> An extension of the present study would be a study of microscopic parameters such as fabric tensor and coordination number in order to try to identify the source of the phenomenon outlined in Section 4.3.
+
+>
+
+
+---
+
+# 2020. Intruder dynamics in a frictional granular fluid: A molecular dynamics study. {#sec-das2020intruder}
+tags: #literature
+
+Prasenjit Das, Sanjay Puri, Moshe Schwartz. 2020. Intruder dynamics in a frictional granular fluid: A molecular dynamics study. _Physical Review E_. 042905.
+
+Link: https://doi.org/10.1103/PhysRevE.102.042905
+DOI: 10.1103/PhysRevE.102.042905
+
+- simulates intruder in a granular gas using MD and considers translational and rotational motion of particles
+- showed the relationship between steady state intruder velocity ($V_s$) and external force ($F_e$)
+- intruder behaves diffusively in directions orthogonal to direction of force
+
+---
+
+
+# 2021. Nanosilica to improve the flowability of fine limestone powders in thermochemical storage units. {#sec-gannoun2021nanosilica}
+
+[R. Gannoun, Rahma Gannoun, J. M. P. Ebri, Alberto T. Pérez, A.T. Pérez, M. J. Espin, F.J. Durán-Olivencia, Jose Manuel Valverde. 2021. Nanosilica to improve the flowability of fine limestone powders in thermochemical storage units. _Chemical Engineering Journal_. 131789.](https://www.sciencedirect.com/science/article/pii/S1385894721031004)
+
+DOI: 10.1016/j.cej.2021.131789
+
+
+
+- Use of powdered lime ($\mathrm{CaO}$) as granular material for thermochemical energy storage coated with silica nanoparticles to improve flowability.
+
+---
+
+# 2014. Lift forces in granular media. {#sec-guillard2014lift}
+tags: #literature
+
+François Guillard, Yoël Forterre, Olivier Pouliquen. 2014. Lift forces in granular media. _Physics of Fluids_. 043301.
+
+Link: http://aip.scitation.org/doi/10.1063/1.4869859
+DOI: 10.1063/1.4869859
+
+- studied lift acting on a cylinder in presences gravity
+- hypothesize that the asymmetry is caused by gravity which changes the pressure gradient
+- does point to the reason behind the lift observed by other works like: 
+	- The thesis in 2020 related to lift generation by rotating cylindrical particle
+
+
+---
+
+# 2005. Scaling vertical drag forces in granular media. {#sec-hill2005scaling}
+tags: #literature
+
+Glen Hill, Susan Yeung, Stephan A Koehler. 2005. Scaling vertical drag forces in granular media. _EPL (Europhysics Letters)_. 137.
+
+Link: https://iopscience.iop.org/article/10.1209/epl/i2005-10203-3/meta
+DOI: 
+
+- Interaction of rapid granular flow and deflecting dams
+
+
+---
+
+# 2018. Archimedes’ law explains penetration of solids into granular media. {#sec-kang2018archimedes}
+tags: #literature
+
+Wenting Kang, Yajie Feng, Caishan Liu, Raphael Blumenfeld. 2018. Archimedes’ law explains penetration of solids into granular media. _Nature communications_. 1–9.
+
+Link: https://www.nature.com/articles/s41467-018-03344-3
+DOI: 10.1038/s41467-018-03344-3
+
+Reporting of a general model for plastic flow (as a quasistatic process)
+
+Key results from study
+- Penetration depth and resistive force relation is scalable to universal form
+- Gradient of steady-state depends on internal friction angle in a non-linear way
+- Intrusion of any convex solid satisfies a modified Archimedes' law
+
+Utility of Intruder Penetration Dynamics
+- Key to modelling many aspects of granular media
+- Locomotion of terrestrial animals
+- Robots navigating on granular surfaces
+- Crater formation in geological and astronomical fields
+- Characterization of dynamics of granular flows
+- Response of perturbed granular materials like: shear banding, sinking effect, jamming transition
+
+Penetration usually modelled with macroscopic laws of drag force
+
+Drag force: A combination of hydrostatic force and viscous force
+- Hydrostatic force: frictional plasticity
+- Viscous force: momentum transfer between grains
+
+
+- Investigated the intrusion of an object in a granular media
+- Reporting of a general model for plastic flow (as a quasistatic process)
+- The drag force on the intruder is considered as a combination of hydrostatic-like force and viscous force
+- For submerged intruders moving at slow velocities, the drag force acting on the intruder is proportional to penetration depth. This observation is confirmed by theories like Resistive Force Theory (RFT) and Local Friction Force Model (LFFM)
+- **The key assumption of RFT and LFFM**: Friction tangential to intruder surface contributes negligibly to the resistive force.
+	*Can this friction contribute to the resistive force in case of multiple intruders?*
+- In gist: $F_d \sim$ Area of the cross-section of the intruder, depth of penetration (have a pressure-like term that contains packing density and g as well). The proportionality constant is associated with internal friction coefficient mu
+- The proportionality constant depends on the nature of granular material and not on the intruder’s properties.
+- They later show that when appropriately scaled, the force acting on the intruder can be treated like Archimedes’ law, with the proportionality constant being K
+- At the initial depth of penetration, there is non-linear relation between force and depth as this is the stage of formation of the stagnant zone in front of the intruder. The force-depth relationship becomes linear after forming the stagnant zone in front of the intruder.
+
+Reporting of a general model for plastic flow (as a quasistatic process)
+
+Key results from study
+- Penetration depth and resistive force relation is scalable to universal form
+- Gradient of steady-state depends on internal friction angle in a non-linear way
+- Intrusion of any convex solid satisfies a modified Archimedes' law
+
+
+Utility of Intruder Penetration Dynamics
+- Key to modelling many aspects of granular media
+- Locomotion of terrestrial animals
+- Robots navigating on granular surfaces
+- Crater formation in geological and astronomical fields
+- Characterization of dynamics of granular flows
+- Response of perturbed granular materials like: shear banding, sinking effect, jamming transition
+
+Penetration usually modelled with macroscopic laws of drag force
+
+Drag force: A combination of hydrostatic force and viscous force
+
+- Hydrostatic force: frictional plasticity
+- Viscous force: momentum transfer between grains
+
+
+---
+
+# 2005. Stress results from two-dimensional granular shear flow simulations using various collision models. _Physical Review E_. {#sec-ketterhagen2005stress}
+tags: #literature
+
+William R Ketterhagen, Jennifer S Curtis, Carl R Wassgren. 2005. Stress results from two-dimensional granular shear flow simulations using various collision models. _Physical Review E_. 061307.
+
+- Link: https://journals.aps.org/pre/abstract/10.1103/PhysRevE.71.061307
+- DOI:
+
+- Used DEM simulation method
+- Soft particle approach preferable for high density system
+- Relevance of contact models for range of volume fractions
+- Accurate predictions can be done as long as soft-sphere models have high enough stiffness
+- Models used
+	- Hard-particle event-driven
+	- Hard-particle-with-overlap (efficient due to time driven approach)
+	- Soft-particle
+- Results
+	- Too large time steps have numerical instabilities (timestep to be set using collision model)
+	- Soft sphere (and frictionless) particle models with low stiffness deviates from kinetic theory
+	- predictions for stresses
+	- Not much difference in predictions based on changing models
+
+---
+
+# 1983. Grain flow as a fluid-mechanical phenomenon. _Journal of Fluid Mechanics_ {#sec-haff1983GrainFlow}
+tags:: #literature
+
+P. K. Haff. 1983. Grain flow as a fluid-mechanical phenomenon. _Journal of Fluid Mechanics_
+
+Link: 
+DOI: 10.1017/S0022112083003419
+
+- > Attempted to write down a set of complete, if heuristic, equations, which are modelled insofar as possible on the usual equations of hydrodynamics. All equations are solved exactly and analytically.
+- The model developed in the work is without any adjustable paremeters and depend on particle interaction parameters. Flow field variables can also be calculated self-consistently.
+- Comparison between Granular systems and Simple Fluids
+	- Constituent particle size
+		- Both systems can be treated using classical mechanics
+		- Validity of continuum hypothesis will be affected by particle size
+	- Energy conservation
+		- Grains undergo inelastic particle collisions as compared to molecules which collide elastically.
+		- The difference in behaviour of the macroscopic systems is caused by this lack of kinetic energy conservation.
+	- Grain size variation
+		- Grains are not identical particles but molecules are identical to one another.
+		- Realistic analysis needs continuous spectrum of grain sizes.
+		- The work assumes that the grains have roughly the same size and small variations won't cause large effect on the particle motion.
+	- Non-central grain-grain interaction
+		- 
+
+---
+
+# 2011. Gradient Monte Carlo simulations: Hard spheres in spatially varying temperature and gravitational fields. _Physical Review E_ {#sec-mehrotra2011gradient}
+
+tags:: #literature
+
+Link: https://journals.aps.org/pre/abstract/10.1103/PhysRevE.83.061306
+DOI: 10.1103/PhysRevE.83.061306
+
+- Study of granular materials in external field or non-isothermal environment
+- Provided a framework to study these systems using inhomogeneous Monte Carlo simulations
+- Comparison of simulations results with Carnahan-Starling Equation of State is done in the study
+- Strategy used to model non-uniform temperature i.e. spatially varying temperature:
+	- Problem is mapped into one with uniform temperature and space-dependent field
+	- This means that field plays an important role in granular temperature
+- Density profile of particles is also in-homogeneous. Lower densities show ideal gas behaviour
+- Pressure-density profile obey Carnahan-Starling equation of state
+- DSMC: Combination of MD and MC approaches
+- Physical systems with natural presence of gradients
+	1. A gas in gravitational field -> spatially varying number density
+	2. A gas with imposed temperature gradient -> spatial variation of number density
+	- These systems are not in thermodynamic equilibrium. The steady state in these systems arise from the balance of fluxes. Standard strategy of analysis is to use transport equations assuming thermodynamic equilibrium.
+- 
+
+---
+
+# 2019. Magnus effect in granular media. {#sec-kumar2019magnus}
+tags: #literature
+
+Sonu Kumar, Manish Dhiman, K Anki Reddy. 2019. Magnus effect in granular media. _Physical Review E_. 012902.
+
+Link: https://journals.aps.org/pre/abstract/10.1103/PhysRevE.99.012902
+DOI: 10.1103/PhysRevE.99.012902
+
+- Done simulation of magnus effect on circular, rotating, translating intruder in a 2d granular material
+- magnus effect was observed for range of area fraction: [0.35, 0.82] (Area fraction: similar to volume fraction but for 2d)
+- At high speeds, lift to drag ratio saturates
+	*What does the saturation of lift to drag ratio mean exactly?*
+- rotational speed would affect the asymmetry of distribution of number of contacts and direction of tangential velocities
+	*can it impact the shear experienced each of the force chains and make uneven?*
+	*how would area fraction and relative particle size would affect this?*
+- Magnus effect in granular media is related to
+	- switching in direction of tangential forces during the collision with object
+	- Asymmetric shear on force chains because of larger size of medium particles than viscous fluids
+	- compared to the viscous fluids, the number of contacts are also distributed unevenly across the surface (perimeter in this case) of the intruder object
+- Phenomena common in granular media and viscous fluids
+	- Instabilities
+		- Kelvin-Helmholtz
+		- Rayleigh-Plateau
+		- Rayleigh-Taylor
+	- Capillary action
+	- Lift and drag on obstacles
+- Phenomena unique to granular media (not observed in viscous fluids)
+	- Jamming: can be prevented using helical inner wall texture in vertical pipe flow
+	
+- Why Magnus effect works?
+	1. Explanation for frictionless fluids
+		- The rotating object interacts with the fluid and have different fluid velocities at the different sides of the objects. This creates a pressure difference because of Bernoulli's principle. The generation of lift by object's interaction with the fluid has one important assumption.
+		- There is no friction between interacting fluid particles and the object surface.
+		- Hence, this explanation is only valid for frictionless fluids.
+	2. Explanation for frictional fluids
+		- Swanson[12] used Boundary Layer Theory to show circulation around the cylinder produced by difference in velocities of upper and lower layer.
+
+- Inverse Magnus Effect
+	- Observed for specific values of $\mathrm{Re}$ because one boundary layer was turbulent while other remained laminar
+	- Observed for free molecular flow (on Knudsen scale probably) but vanishes once system density crosses a critical value
+
+- Magnus effect in granular media
+	- Lift generation mechanism
+		- Asymmetry from gravity or intruder shape
+		- Difference of shear rate across intruder
+	- Use symmetric intruder with no rotation to eliminate lift
+	- Wiggle the intruder to create lift on the intruder
+- Simulation Method: DEM
+|parameter | details |
+| -- | -- |
+| particle diameter ($d$) | 0.02 m (10~\% polydispersity) |
+| intruder diameter ($d_intr$)| $5d$ |
+| 2D system | $300d\ \times\ 200d$ |
+| Boundary types | periodic along x, confined along y |
+| no. of particles | 26000 - 62000 |
+| Mass-area density | $20~kg.m^-2$ |
+
+
+---
+
+# 2013. Experimental velocity fields and forces for a cylinder penetrating into a granular medium. {#sec-seguin2013experimental}
+tags: #literature
+
+A Seguin, Y Bertho, F Martinez, Jérôme Crassous, P Gondret. 2013. Experimental velocity fields and forces for a cylinder penetrating into a granular medium. _Physical Review E_. 012201.
+
+Link: https://journals.aps.org/pre/abstract/10.1103/PhysRevE.87.012201
+DOI: 10.1103/PhysRevE.87.012201
+
+- experimental setup: vertical penetration of intruder in granular media
+
+---
+
+# 1998. Kinetic theory for a vibro-fluidized bed. _Journal of Fluid Mechanics_ {#sec-kumaran1998KineticTheory}
+
+tags:: #literature
+
+Link: https://www.cambridge.org/core/journals/journal-of-fluid-mechanics/article/kinetic-theory-for-a-vibrofluidized-bed/09909CBBE2E4CD9288ED7CE5F1D2F3F9
+DOI: 10.1017/S0022112098001050
+
+- Limitations and Assumptions
+	- Where does the idea or assumption of kinetic theory does not hold true for vibrated bed?
+	* Kumaran's kinetic theory for vibrated beds is heuristical. The assumptions has no quantifiable way to help decide validity of the theory for a specific system
+- Agreements with the author (me or others)
+	- 
+- Disagreements with the author (me or others)
+	- 
+- Key conclusions, Interesting points, Explorable tangents
+	- 
+- Relevant for my work
+	- 
+
+> The variation in the particle density over a distance comparable to the particle radius is small.
+
+This essentially means that the amplitude of the vibration cannot be larger than the diameter of host particles.
+
+- Investigated low amplitude & high frequency vibrated bed raeching a liquid-like state
+- Velocity of vibrating plate
+	- $$U = U_0 \exp(i\omega t)$$
+	- 
+
+---
+
+# 2008. Numerical simulations of the flow of dilute granular materials around obstacles. {#sec-levy2008numerical}
+tags: #literature
+
+Avi Levy, Mohamed Sayed. 2008. Numerical simulations of the flow of dilute granular materials around obstacles. _Powder technology_. 137–148.
+
+Link: https://www.sciencedirect.com/science/article/pii/S0032591006005407
+DOI: 
+
+- 2 simulation approaches:
+- Single phase using Particle in Cell :
+    1. Less familiar than discrete element method, but scalable
+    2. Flow around flat plate and change with velocity and volume fraction.
+- Predicted shock wave matches with experimental studies
+- 2 phase model :
+    1. Uses granular kinetic theory and used FLUENT 6.1 code
+    2. Results match with PIC model
+
+---
+
+# 2011. Lift force on an asymmetrical obstacle immersed in a dilute granular flow. {#sec-potiguar2011lift}
+tags: #literature
+
+Fabricio Q. Potiguar. 2011. Lift force on an asymmetrical obstacle immersed in a dilute granular flow. _Phys. Rev. E_. 061302.
+
+Link: https://link.aps.org/doi/10.1103/PhysRevE.84.061302
+DOI: 10.1103/PhysRevE.84.061302
+
+- lift study on elliptical intruder
+- Checked the effect of
+	- ellipse eccentricity
+	- orientation (tilt w.r.t. horizontal)
+	- size
+	- coefficient of restitution    
+- Granular shock wave forms in front of the intruder for dilute flow.
+- The shock-wave increases the local volume fraction at the front face of the intruder.
+
+
+---
+
+# 2011. Dense granular flow around a penetrating object: Experiment and hydrodynamic model. {#sec-seguin2011dense}
+tags: #literature
+
+Antoine Seguin, Yann Bertho, Philippe Gondret, Jérôme Crassous. 2011. Dense granular flow around a penetrating object: Experiment and hydrodynamic model. _Physical review letters_. 048001.
+
+Link: https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.107.048001
+DOI: 10.1103/PhysRevLett.107.048001
+
+- Experimental + simulation
+- Experiment with steel cylinder and glass beads
+- Image capturing for PIV
+- Hydrodynamic model using extended kinetic theory
+- Simulation modelled the material using inelastic gas theory
+- Force proportional to diameter
+
+
+---
+
+# 2011. Liquid-gas phase separation in confined vibrated dry granular matter. {#sec-roeller2011liquid}
+tags: #literature
+
+Klaus Roeller, James PD Clewett, RM Bowley, Stephan Herminghaus, Michael R Swift. 2011. Liquid-gas phase separation in confined vibrated dry granular matter. _Physical review letters_. 048002.
+
+Link: https://link.aps.org/doi/10.1103/PhysRevLett.107.048002
+DOI: 10.1103/PhysRevLett.107.048002
+
+## Introduction
+
+- Observed liquid-gas phase separation experimentally in vertical vibration between 2 horizontal plates.
+- Also modelled the same system using Molecular Dynamics simulation
+- Phase transition phenomena have been observed in granular system when subjected to vibration
+- Driven granular gas: a good to understand steady state systems far from equilibrium
+- In literature, solid-liquid co-existence have also been observed in similar geometries
+
+
+## Setup
+- Vertically vibrated cell confining glass spheres(Polydisperse spherical particles. Mean diameter: 610 um) (not a 2D vibrated bed)
+- The cell is a trap made of two plates: lower being aluminium and upper one as a glass plate
+- Both plates separated by a square aluminium frame (inner side 13 cm) with can vary the gap between plates
+- Vibration given by an electromagnetic shaker with signal from frequency generator
+- Vertical motion monitored by accelerometer
+
+
+## Measurement values
+| Parameter | Value |
+|--|--|
+| Gap between plates | 0.5,0.75,1.0 cm |
+| Vibration signal frequency | 23-65 Hz |
+| Dimensionless acceleration | 1-18 |
+
+
+## Results
+- Phases separate as amplitude increases
+- Pattern stay stationary for a given amplitude
+- The phases again become homogeneous as amplitude increase further
+- No crystalline order observed in High density phase of material
+- Phase separation amplitude was independent of vibration frequency (in investigated range)
+- The phase separation is function of:
+    1. Vibration amplitude 
+    2. Volume fraction
+- Phase separation does not occur when system is under random forcing.
+- Observable even in low air pressures ($O(10^{-2})$) Torrs (Normal atmospheric pressure is 760 Torr!)
+
+
+## Replication via MD simulation
+| Parameters | Values|
+|--|--|
+| Particle model | Hard sphere  |
+| Particle diameter | $d$ (polydispersity of std-dev being $0.06 d$ |
+| Plate gap | $16d$ |
+| Square side | $210d$ |
+| Interparticle collisions | inelastic with $\alpha = 0.9$ (velocity independent) |
+| Particle-plate collisions | elastic |
+| Horizontal Walls | periodic |
+
+## Simulation results
+- Phase separation detected using time-averaged local densities
+- Results qualitatively similar to experimental results
+- Qualitative differences likely caused by neglected dissipation mechanisms
+- The interface between phases remain circular: indicating effective surface tension
+- Short range order is observed in dense phase via pair correlation(Radial probability distribution of finding the particle) (Similar to classical liquids and gases)
+
+
+## Proposed Mechanism based on Simulations
+- Phase separation driven by spinodal decomposition(Spontaneous phase separation of 2 thermodynamic phases without nucleation)
+- Mechanism is different from separation mechanisms like:
+    1. Clustering by inelastic collisions
+    2. Cohesive interaction between grains
+- In dense region, the thermal energy is dissipate away at faster rate due to high number of dissipative collisions.
+- In dilute medium, significant number of particle propagate without collisions and hence get synchronized further maintaining the high energy, low density state
+
+---
+
+# 2005. Brazil nut effect and excluded volume attraction in vibrofluidized granular mixtures. _Physical Review E_ {#sec-bose2005BrazilNuta}
+tags: #literature
+
+M Bose, UU Kumar, PR Nott, V Kumaran. 2005. Brazil nut effect and excluded volume attraction in vibrofluidized granular mixtures. _Physical Review E_
+
+Link: 
+DOI: 
+
+---
+
+
+# 2007. Dynamics of an intruder in a shaken granular bed. _Powder technology_ {#sec-bose2007dynamicintruder}
+tags: #literature
+
+Manaswita Bose, Martin Rhodes. 2007. Dynamics of an intruder in a shaken granular bed. _Powder technology_
+
+Link: 
+DOI: 
+
+---
+
+
+# 2004. Excluded-volume attraction in vibrated granular mixtures. {#sec-bose2004ExcludedvolumeAttraction}
+tags: #literature
+
+M. Bose, P. R. Nott, V. Kumaran. 2004. Excluded-volume attraction in vibrated granular mixtures. _Europhysics Letters_.
+
+Link: https://iopscience.iop.org/article/10.1209/epl/i2004-10251-1
+DOI: 10.1209/epl/i2004-10251-1
+
+
+- For a bi-disperse system, they found that there is an attractive force between large particles when the distance between them is smaller than diameter of small particles.
+- Small particles are excluded from the gap formed between large particles leading to no pressure in the space between large particle. On the other hand, there is pressure exerted at the outer side of larger particles. This combination leads to overall pressure exerted on the larger particles causing them to move closer to each other.
+
+> Equipartition of energy does not apply in a vibrated granular mixture of the same size but different mass, and the mass difference has a stronger effect on non-equipartition of energy than the difference in the coefficients of restitution of particles.[^1][^2]
+
+> Segregation in binary mixtures has been observed in horizontally shaken granular layers, and it has been observed that the onset of segregation has the features of a continuous phase transition. It has been speculated that one of the reasons for segregation could be the attractive force due to the excluded-volume interaction between large particles in a background of agitated small particles. [^3]
+
+> The magnitude of the attractive force is determined from the pair distribution function for the particles, and not on the basis of the macroscopic segregation phenomenon. A theory, similar to that for the entropic aggregation in colloidal suspensions, is developed for this phenomenon.
+
+- Observed in regime where diffusion is larger compared to convection. There is no large scale convective motion in the vibrating bed.
+- Effect is not observed when bed frequency [^4] is below critical frequency where convective motion is found [^5].
+
+
+## Exclusion of volume between colloidal particles in polymer solution
+
+![Excluded Volume Effect](assets/excluded-volume.png)
+
+> Exclusion of the polymer molecule from the region between the particles when the distance between the particles is less than the radius of gyration of the molecule. This force is usually referred to as the “**entropic attraction**” force due to the increase in the volume available to the polymers when the distance between the colloidal particles is less than the radius of gyration of the polymers. [^6]
+
+Exclusion surface has a radius of $R + R_G$, where $R_G$ is radius of gyration of polymer. When the excluded surfaces overlap, the polymer is excluded from the region between the particles. This means that in the excluded volume region, there is no osmotic pressure due to polymers. But outer surface experiences osmotic pressure and hence there is a net attractive force on the colloidal particles. The attractive force is proportional to osmotic pressure times cross-sectional area of surface $S$ from which polymers are excluded.
+
+## Mapping entropic attraction to excluded volume interaction in vibrofluidized beds
+We have,
+- Osmotic pressure due to polymers -> pressure due to fluctuating velocity of smaller particles
+- Pressure profile in vibrofluidized bed is not constant and hence more complicated calculation is involved in it.
+- 2 aspects of the calculation process
+	1. Calculation of potential due to excluded volume effect
+	2. Calculation of increase in pair distribution function due to potential
+- The attractive potential between the large particles is inferred from the pair distribution function for a pair of particles, which is defined such that $g(r)dr$ is the probability of finding a second particle in the differential volume $dr$ about the position $r$ from the center of the first particle [^7].
+$$g(r) = \exp(-U(r)/T)$$
+
+> The pressure due to the small particles is a product of the temperature and a monotonically increasing function of density. Due to this decreasing pressure gradient, the large particle equilibrates at a position where the difference in the force exerted on the top and bottom surfaces is equal to the weight of the particle.
+
+
+
+[^1]: Feitosa K. and Menon N., Phys. Rev. Lett., 88 (2002) 198301.
+[^2]: Wildman R. D. and Parker D. J., Phys. Rev. Lett., 88 (2002) 064301.
+[^3]: Reis P. M. and Mullin T., Phys. Rev. Lett., 89 (2002) 244301.
+[^4]: Brone D. and Muzzio F. J., Phys. Rev. E, 56 (1997) 1059.
+[^5]: Pak H. K., Van Doorn E. and Behringer R. P., Phys. Rev. Lett., 74 (1995) 4643.
+[^6]: Asakura S. and Oosawa F., J. Polym. Sci., 33 (1958) 183.
+[^7]: 1. Allen M. P. and Tildesley D. J., Computer Simulation of Liquids (Clarendon Press, Oxford) 1990.
+
+---
+
+# 2021. Accurate buoyancy and drag force models to predict particle segregation in vibrofluidized beds {#sec-kianioshtorjani2021accuratebuoyancy}
+
+Link: https://journals.aps.org/pre/abstract/10.1103/PhysRevE.103.062903
+
+DOI: 10.1103/PhysRevE.103.062903
+
+The segregation of large intruders in an agitated granular system is of high practical relevance, yet the accurate modelling of the segregation (lift) force is challenging as a general formulation of a granular equivalent of a buoyancy force remains elusive.
+
+Strong evidence for the validity of the generalization of the Archimedean formulation of the buoyancy force which only requires an expression for the solid fraction of the intruder, hence allowing for a computationally less demanding calculation of the buoyancy force as coarse-graining is avoided.
+
+Dependence of the lift force on the density of the bed particles and the intruder diameter, and the independence of the lift force on the the intruder diameter, and the independence of the lift force on the intruder density and the vibration strength (once a critical value is exceeded).
+
+---
+
+# 2003. Dense granular flow around an immersed cylinder {#sec-chehata2003densegranular}
+
+Link: http://scitation.aip.org/content/aip/journal/pof2/15/6/10.1063/1.1571826
+
+DOI: 10.1063/1.1571826
+
+- Simulated 2-d dilute granular flow around immersed cylinder using DEM
+- Measured drag force on cylinder
+- Simulated 2-d dilute granular flow around immersed cylinder using DEM
+- Measured drag force on cylinder
+- Force measurements done in terms of Drag Coefficient
+- Drag Coefficient
+    - for subsonic range, increase with decreasing Mach number
+    - for supersonic range, insensitive to Mach number
+    - asymptotically increase with increase in Knudsen number
+    - decrease with decrease in normal coefficient of restitution
+    - insensitive to friction coefficient
+- particle motion and interparticle interaction: signiticant for overall momentum transport
+- Granular flows around immersed objects observed in:
+    - blades and bars in mixing and granulating apparatus
+    - inserts for structural support while filling and emptying granular bins
+    - agricultural tiling
+    - impact probes for soil characterization
+    - immersed pipes in fluidized beds and chute flows
+    - size aggregation 
+- In dense granular system, the momentum transfer is by long-lasting multi-particle interactions
+- Wieghardt
+    - For slow velocities (1-100 cm/s), drag on rods is weakly dependent on translational velocity of rod and cross sectional shape because drag is by sliding friction interactions
+    - Square root dependence of drag on projected diameter of rod
+- Albert
+    - Used slower velocities than Wieghardt (1 mm/s) and got mostly similar results
+    - Linear dependence of drag on projected diameter of rod
+- Atkinson
+    - Studied force on long surfaces oriented parallel to the flow in vertical chute
+    - Compared with models by Jansen's method and found agreement in case when leading edge of the surface is not immersed in the flow
+
+---
+
+# 2007. Phase diagram of vertically shaken granular matter. {#sec-eshuis2007phase}
+tags: #literature 
+
+Peter Eshuis, Ko Van Der Weele, Devaraj Van Der Meer, Robert Bos, Detlef Lohse. 2007. Phase diagram of vertically shaken granular matter. _Physics of Fluids_. 123301.
+
+Link: https://aip.scitation.org/doi/full/10.1063/1.2815745
+DOI: 10.1063/1.2815745
+
+- Characterization of phenomena and transitions via dimensionless parameters and phase diagram via experiments.
+
+## Experimental Setup
+- Quasi 2D setup
+- Materials used:
+	- Perspex for container
+	- Glass beads as granular material
+- System dimensions: $L\times D\times H = 101\times 5\times 150~\mathrm{mm}$
+- Diameter of glass beads: $1~\mathrm{mm}$
+- Density of glass beads: $2600~\mathrm{kg.m^{-3}}$
+- Coefficient of restitution: $0.95$
+
+## Natural Control Parameters
+1. Shaking parameter: $a^2\omega^2/gl$ 
+	- Ratio of kinetic energy inserted in the system by the shaking bottom to the potential energy associated with typical displacement of particles
+2. Number of bead layers
+3. Inelasticity parameter: $\epsilon = (1-e^2)$
+4. Aspect ratio: $L/h_0$
+- Shaking parameter and Number of bead layers will be the focus of the study for regime mapping
+
+## A Note On Shaking Parameter
+- **Mild Fluidization**: The granular bed follows the motion of the bottom vibrating wall. Hence the characteristic length for displacement is the shaking amplitude $a$. The energy ratio hence becomes the shaking acceleration as follows
+	  $$\Gamma = \frac{a\omega^2}{g}$$
+- **Strong Fluidization**: Granular bed does not follow the motion of the bottom vibrating wall. Hence an intrinsic displacement length scale is taken to be particle diameter $d$. The resulting expression is termed as Dimensionless shaking strength given by
+		$$S = \frac{a^2\omega^2}{gd}$$
+- **Intermediate Fluidization**: There is a competition of length scales in this regime. Hence, transitions are influenced by changing one of the length scales. Hence choice of the length scale is not *a priori* clear.
+
+## 1. Bouncing Bed
+
+
+
+## 2. Undulations
+
+
+
+## 3. Granular Leidenfrost Effect
+
+
+
+## 4. Convection Rolls
+
+
+
+## 5. Granular Gas
+
+
+
+## Phase Diagram
+![Vibrated Granular Bed Phase Diagram](assets/eshuis2007phase-phase_diagram.png)
+
+
+---
+
+# 1983. Characterisation of Strange Attractors {#sec-grassberger1983CharacterizationStrange}
+
+
+## Background
+- Dissipative dynamical systems often exhibit "strange" attractors in phase space
+- Characterisation of strange attractors is done by fractal dimension D < degrees of freedom F
+- Measure of strangeness = Fractal (Hausdorff) Dimension
+- Problem: Difficult to compute D when D > 2
+- Using a single time series to extract the measure of strangeness is found impractical for systems with D > 2
+- 
+
+## Research Question and Key Findings
+- Measure of strangeness using time series that doesn't need to rely on Poincare Maps (Related to fractal dimensions)
+
+
+## Methodology and Data
+
+N-point long time series denoted as
+
+$$X_i = X(t + i\tau)$$
+
+Correlation integral is given as
+
+$$C(r) = \lim_{N \rightarrow \infty} \frac{1}{N^2} \sum_{i,j = 1}^N \theta(r - |X_i - X_j|)$$
+Where $\theta$ is Heaviside function.
+
+Core thesis of the paper:
+
+$$C(r) \propto r^\nu$$
+
+
+## Contributions to the Field
+
+
+### Significance, Comparison and Novelty of Results
+
+
+### Discussions, Debates and Commentaries in Literature
+
+
+## Implications and Future Research
+
+---
+
+# 2003. Dilute granular flow around an immersed cylinder {#sec-wassgren2003dilute}
+
+Link: http://aip.scitation.org/doi/10.1063/1.1608937
+
+DOI: 10.1063/1.1608937
+
+- investigated 2d dilute granular flow around an immersed cynlider using DEM simulations
+- drag force $F_d$ are dimensionless drag coefficient $C_d$ are related by the expression
+$$F_d = C_d \frac{1}{2}\rho \nu_\infty U_\infty^2 (D+d)$$
+- $C_d$ increase with decreasing Mach number for subsonic values.
+- $C_d$ is unaffected by Mach number for supersonic values.
+- $C_d$ rapidly increases with increasing Knudsen number $\mathrm{Kn}$ and approaches an asymptotic value for large $\mathrm{Kn}$
+
+
+| Term | Description |
+| -- | -- |
+| $F_d$ | drag force |
+| $C_d$ | drag coefficient |
+| $\rho$ | upstream particle mass density |
+| $\nu_\infty$ | upstream solid fraction |
+| $U_\infty$ | upstream velocity |
+| $D$ | cylinder diameter |
+| $d$ | particle diameter |
+| $\mathrm{Kn}$ | Knudsen Number |
+
+## System Studied
+- 2D dilute granular flow around an immersed cylinder using DEM simulations
+	- A 2D disk is equivalent to a cylinder in this case.
+
+## Observations from Literature
+### K. Wieghardt, ‘‘Forces in granular flow,’’ Mech. Res. Commun. 1, 3 (1974)
+- Performed first experiments on granular flow around immersed objects
+- Experimentally studied dense granular flow of sand around partially immersed rods
+- Dense Granular Flow: Primary momentum transfer mechanism is long-lasting multi-particle contacts
+- Drag depends on cross-sectional shape, translational velocity and square root dependence with projected diameter
+- Sliding friction interactions with surrounding particle is a mechanism independent of velocity
+	- This is the cause of drag in slow velocity regime
+- Velocity range investigated: 1-100 cm/s
+
+### R. Albert, M.A. Pfeifer, A.-L. Barabasi, and P. Schiffer, ‘‘Slow drag in a granular medium,’’ Phys. Rev. Lett. 82, 205 (1999).
+- Velocity range investigated: 1 mm/s
+- Drag linearly depends on projected diameter
+
+## Drag Force
+- Drag force $F_d$ are dimensionless drag coefficient $C_d$ are related by the expression
+$$F_d = C_d \frac{1}{2}\rho \nu_\infty U_\infty^2 (D+d)$$
+
+| Term | Description |
+| -- | -- |
+| $F_d$ | drag force |
+| $C_d$ | drag coefficient |
+| $\rho$ | upstream particle mass density |
+| $\nu_\infty$ | upstream solid fraction |
+| $U_\infty$ | upstream velocity |
+| $D$ | cylinder diameter |
+| $d$ | particle diameter |
+| $\mathrm{Kn}$ | Knudsen Number |
+
+### Observations on drag coefficient
+- $C_d$ increase with decreasing Mach number for subsonic values.
+- $C_d$ is unaffected by Mach number for supersonic values.
+- $C_d$ rapidly increases with increasing Knudsen number $\mathrm{Kn}$ and approaches an asymptotic value for large $\mathrm{Kn}$.
+- $C_d$ also decreases with decreasing Coefficient of Restitution
+- $C_d$ is almost insensitive to friction cofficient
+
+## Research Question and Key Findings
+
+
+## Methodology and Data
+
+
+## Contributions to the Field
+
+
+### Significance, Comparison and Novelty of Results
+
+
+### Discussions, Debates and Commentaries in Literature
+
+
+## Implications and Future Research
+
+
+---
+
+# 2009. Bouncing ball problem: stability of the periodic modes {#sec-barroso2009bouncing}
+
+Link: https://journals.aps.org/pre/abstract/10.1103/PhysRevE.79.026206
+
+## Research Question and Key Findings
+- 
+
+## Methodology and Data
+
+
+## Contributions to the Field
+
+
+### Significance, Comparison and Novelty of Results
+
+
+### Discussions, Debates and Commentaries in Literature
+
+
+## Implications and Future Research
+
+---
+
+# 2006. The unsteady drag force on a cylinder immersed in a dilute granular flow {#sec-bharadwaj2006unsteady}
+
+Link: https://pubs.aip.org/aip/pof/article/18/4/043301/915496/The-unsteady-drag-force-on-a-cylinder-immersed-in
+
+DOI: 10.1063/1.2191907
+
+## Research Question and Key Findings
+> Drag force on intruder  expressed in terms of dimensionless drag coefficient
+$$C_d = \frac{F_d}{\left[ \frac{1}{2} \rho \nu U^2 (D + d) \right]} $$
+
+> Not much variation between steady and unsteady drag coefficient
+
+> The drag coefficient is larger than its nominal value during an initial transient stage, during which a shock wave develops in front of the cylinder. Once the shock has developed, the drag coefficient remains constant despite the stream’s acceleration.
+### Literature Findings
+
+> Unsteady flow around immersed objects is also observed in the segregation of impurities due to forced vibrations. (per https://link.springer.com/article/10.1007/s100350100093)
+
+
+## Methodology and Data
+- Hard Sphere particle DEM
+- Dissipative upstream flow
+- Calculated drag coefficient and tangetial coefficients
+- Added sideways fluctuation at a specific location in space
+
+## Contributions to the Field
+
+
+### Significance, Comparison and Novelty of Results
+
+
+### Discussions, Debates and Commentaries in Literature
+
+
+## Implications and Future Research
+- In vibrated granular bed, the shock propagation might not be symmetric and hence the information might travel at different rates in the vibrated granular bed.
+	- This is because in vibrated granular bed, there is a density gradient of the particles established in the medium.
+
+---
+
+# 2020. Intruder dynamics in a frictional granular fluid: A molecular dynamics study {#sec-das2020intruder}
+
+Link: https://journals.aps.org/pre/abstract/10.1103/PhysRevE.102.042905
+
+DOI: 10.1103/PhysRevE.102.042905
+
+```bibtex
+@article{das2020intruder,
+  title={Intruder dynamics in a frictional granular fluid: A molecular dynamics study},
+  author={Das, Prasenjit and Puri, Sanjay and Schwartz, Moshe},
+  journal={Physical Review E},
+  volume={102},
+  number={4},
+  pages={042905},
+  year={2020},
+  publisher={APS}
+}
+```
+## Research Question and Key Findings
+
+
+## Methodology and Data
+
+
+## Contributions to the Field
+
+
+### Significance, Comparison and Novelty of Results
+
+
+### Discussions, Debates and Commentaries in Literature
+- Geng and Behringer (see https://doi.org/10.1103/PhysRevE.71.011302) studied the drag force acting on an intruder in a d = 2 granular material consisting of bidisperse disks.
+	- $F_d$ shows a power-law dependence on the area fraction
+	- $V ∼ \exp(F_d)$
+	- mobility of the intruder depends strongly on V
+- Hilton and Tordesillas (see https://doi.org/10.1103/PhysRevE.88.062203)
+	- drag force acting on a spherical intruder in a $d = 3$ granular bed depends on the Froude number $\mathrm{Fr = \sqrt{2V/gR}}$
+	- 
+
+## Implications and Future Research
+
+
+---
+
+{#sec-grassberger1983characterizationstrangea}
+
+
+
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
